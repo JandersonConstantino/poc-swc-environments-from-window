@@ -27,7 +27,7 @@ fn transform_key_value(node: &mut Prop, prefix_name: String) {
         updated_key.clone()
       );
 
-      if util::is_production_environment() && has_updated_key_name && value.is_lit() {
+      if has_updated_key_name && util::is_production_environment() && value.is_lit() {
         *value = Lit::Str(Str {
           value: "".into(),
           span: swc_core::common::DUMMY_SP,
