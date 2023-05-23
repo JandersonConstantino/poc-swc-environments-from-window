@@ -1,0 +1,14 @@
+{
+    "name": "dollar-symbol-remove-plugin",
+    "version": "0.1.0",
+    "description": "",
+    "author": "",
+    "license": "ISC",
+    "keywords": ["swc-plugin"],
+    "main": "target/wasm32-wasi/release/dollar_symbol_remove_plugin.wasm",
+    "scripts": {
+        "prepublishOnly": "cargo build-wasi --release"
+    },
+    "files": [],
+    "preferUnplugged": true
+}
